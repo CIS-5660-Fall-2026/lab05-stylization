@@ -4,10 +4,12 @@ Let's practice using grammars! For this lab, please pull up the L-system node in
 ## Luke Kwon
 ### 1. Wheat grammar puzzle
 <img width="1723" height="916" alt="Screenshot 2026-10-07 at 11 03 06 AM" src="https://github.com/user-attachments/assets/db7097f0-e073-4021-98d6-8cd65fbe6696" />
+
 **Solution** - Premise: F / Rule: F=FF[-FF]F[-FF]FF-
 
 ### 2. Square grammar puzzle
 <img width="1096" height="708" alt="Screenshot 2026-10-07 at 11 33 04 AM" src="https://github.com/user-attachments/assets/95744efd-d436-4230-8d78-0d421fa6b87b" />
+
 **Solution** - Premise: -F / Rule: F=F-F+F+F-F
 
 ### 3. Custom Plant - Dragon Blood Tree
