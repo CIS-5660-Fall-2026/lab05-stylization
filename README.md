@@ -15,7 +15,7 @@
 
 ## 3. Custom Plant
 
-<img src="Result/reference.png" width="250">
+<img src="Result/Reference.png" width="250">
 
 *Reference*
 
