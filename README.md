@@ -1,22 +1,32 @@
 # lab05-grammars
-Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
+The lab instructions can be found [here](https://github.com/CIS-5660-Fall-2026/lab05-stylization/blob/main/README.md).
 
-## 1. Wheat grammar puzzle
-Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949661-a3a0e1f7-7d68-4b9e-8384-d9991e1e9fd2.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949853-cf2306b3-3537-4c24-91b5-0a3083bc87c0.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949859-5e432b4b-f18d-48b5-a9e9-8d7dba255955.png">
+## 1. Wheat Grammar
+For this L-system, the angle is set to `20`
 
-## 2. Square grammar puzzle
-How about this one? Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949895-87cdfb43-da7c-4867-ab1b-107e1ba9d2a7.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949904-a9cdfe0f-319e-4ca8-9935-dd338217a7cf.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949910-928e5993-ce26-4681-80f8-ffeb54be4dcf.png">
+![A screenshot of an L-system grammar rule.](grammar_rule_1.png)
 
-## 3. Custom plant
-Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of that plant. Unlike our simple puzzles, please use multiple rules for greater complexity. Think carefully about the structure of your grammar! EXPLAIN the structure of your plant in the README. What are the components? What do each of the rules do? Be sure to also include images of a few iterations of your output plant. 
+## 2. Square Grammar
+For this L-system, the angle is set to `90`
 
-## Submission
-- Create a pull request against this repository
-- In your readme, list your solutions and format your README nicely
-- Profit
+![A screenshot of an L-system grammar rule.](grammar_rule_2.png)
+
+## 3. Custom Plant
+At Nico's suggestion, I chose to try and model a fern. Specifically, the fiddlehead fern.
+
+![A close-up of a fiddlehead fern](https://www.nhm.ac.uk/content/dam/nhm-www/discover/ferns/fern-unfurling-full-width.jpg.thumb.1920.1920.png)
+*(The above image is from the [Natural History Museum](https://www.nhm.ac.uk/discover/ferns.html))*
+
+I used [this spiral L-system](https://gist.github.com/nitaku/8b9e134ca8bae13bb470) as a base for the fern; then, with Nico's help, I injected "leaves" at junctures.
+
+![A screenshot of a set of grammar rules.](grammar_rule_custom.png)
+
+1. `A=AF[+C]` - This adds growth to the spiral, and produces a leaf at each juncture where it occurs (there is an area of empty "stem" as it takes 3 iterations for `C` to be invoked).
+2. `B=B!(0.5)"(0.5)+AF+AF`- This is where the "spiraling" happens: first, the incoming geometry is scaled down both by length and (volume) thickness. Then, it is extended twice by `AF` (i.e., the rule `A` and then moved forward once).
+3. `C=[+^F][+&F]+F"(0.5)[+^F][+&F]` - This is the "geometry" for the "leaf": it makes a three-prong fork, then from the center branch makes another, scaled down three-prong fork.
+
+<img width="200" src="custom_3_itt.png">
+<img width="200" src="custom_5_itt.png">
+<img width="200" src="custom_10_itt.png">
+
+*(Screenshots of the L-system with 3, 5, and 10 iterations, respectively)*
