@@ -1,4 +1,54 @@
 # lab05-grammars
+
+**Name:** Zhiyao Luo
+
+## 1. Wheat Grammar
+
+<img src="Result/result1.png" width="700">
+
+*Wheat Grammar*
+## 2. Square Grammar
+
+<img src="Result/result2.png" width="700">
+
+*Square Grammar*
+
+## 3. Custom Plant
+
+<img src="Result/Reference.png" width="250">
+
+*Reference*
+
+<img src="Result/result3.png" width="700">
+
+*Custom Plant*
+
+My plant is inspired by a columnar tree with a tall central trunk and upward-growing branches.
+
+**Premise:** `X`
+
+**Rule 1:** `X=F[+X][-X]FX`  
+**Rule 2:** `F=FF`  
+**Angle:** `15`
+
+`X` represents a growth point and `F` represents a stem.  
+Rule 1 creates side branches and continues the main stem.  
+Rule 2 makes the existing stems longer.
+
+### Iterations
+
+<img src="Result/gen3.png" width="700">
+
+*Generation 3*
+
+<img src="Result/gen5.png" width="700">
+
+*Generation 5*
+
+
+
+
+# lab05-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
 ## 1. Wheat grammar puzzle
