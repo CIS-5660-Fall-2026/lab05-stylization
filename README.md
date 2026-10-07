@@ -11,9 +11,9 @@ Solution - Premise: F / Rule: F=FF[-FF]F[-FF]FF-
 Solution - Premise: -F / Rule: F=F-F+F+F-F
 
 ### 3. Custom Plant - Dragon Blood Tree
-<img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/fdbe9965-8ac9-4c95-b532-4c2ebf985ddf" />
+<img width="320" height="320" alt="image" src="https://github.com/user-attachments/assets/fdbe9965-8ac9-4c95-b532-4c2ebf985ddf" />
 
-<img width="640" height="640" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
+<img width="1081" height="699" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
 Premise: FFF!"[FFFFFA]/////[FFFFFA]/////FFFFFA
 Rule1: A = !"[B]/////[B]/////B
 Rule2: B = &FFFFA
