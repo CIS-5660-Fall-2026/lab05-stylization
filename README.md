@@ -17,6 +17,9 @@ Let's practice using grammars! For this lab, please pull up the L-system node in
 
 <img width="1081" height="699" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
 
+The dragon blood tree has a long base trunk, and the branches spread out in a positive angle, giving them the converging-above-90 degrees look.
+I tried to recreate this tree by increasing the length and girth of the base shape, then gradually decreasing these values each iteration, while keeping the angle at a decently small positive value.
+
 **Premise:** FFF!"[FFFFFA]/////[FFFFFA]/////FFFFFA
 
 **Rule1:** A = !"[B]/////[B]/////B
