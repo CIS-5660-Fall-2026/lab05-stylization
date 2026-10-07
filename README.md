@@ -1,6 +1,3 @@
-<img width="1723" height="916" alt="Screenshot 2026-10-07 at 11 03 06 AM" src="https://github.com/user-attachments/assets/db7097f0-e073-4021-98d6-8cd65fbe6696" />
-<img width="1096" height="708" alt="Screenshot 2026-10-07 at 11 33 04 AM" src="https://github.com/user-attachments/assets/95744efd-d436-4230-8d78-0d421fa6b87b" />
-<img width="1081" height="699" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
 # lab05-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
@@ -14,9 +11,9 @@ Solution - Premise: F / Rule: F=FF[-FF]F[-FF]FF-
 Solution - Premise: -F / Rule: F=F-F+F+F-F
 
 ### 3. Custom Plant - Dragon Blood Tree
-<img width="1200" height="1200" alt="image" src="https://github.com/user-attachments/assets/fdbe9965-8ac9-4c95-b532-4c2ebf985ddf" />
+<img width="640" height="640" alt="image" src="https://github.com/user-attachments/assets/fdbe9965-8ac9-4c95-b532-4c2ebf985ddf" />
 
-<img width="1081" height="699" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
+<img width="640" height="640" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
 Premise: FFF!"[FFFFFA]/////[FFFFFA]/////FFFFFA
 Rule1: A = !"[B]/////[B]/////B
 Rule2: B = &FFFFA
