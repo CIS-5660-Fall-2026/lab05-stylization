@@ -1,6 +1,6 @@
 # Lab 05 — L-systems
 
-The Houdini file is [lab05.hipnc](lab05.hipnc). It contains three geometry objects: `wheat`, `square`, and `fern`. Each object has separate L-system nodes for the iterations shown below.
+Project file: [lab05.hipnc](lab05.hipnc). The three objects are `wheat`, `square`, and `fern`. Each has one L-system node for each iteration shown below.
 
 ## 1. Wheat grammar
 
@@ -10,7 +10,7 @@ Angle: 20 degrees
 Rule: F=FF[-FF]F[-FF]FF-
 ```
 
-The main stem has five forward steps. The two `[-FF]` branches leave the stem at different heights, and the brackets return the turtle to the stem after each branch. The last `-` changes the heading for the next section. It does not change the first iteration's visible stem, but it makes the later iterations bend and curl.
+The five `F` symbols outside the brackets form the main stem. Each `[-FF]` adds a two-step branch, then returns to the stem. The final `-` is easy to miss: it leaves the first iteration's shape unchanged, but turns the next section in later iterations. That is what gives the larger shape its curl.
 
 ### Rules in Houdini
 
@@ -28,7 +28,7 @@ Angle: 90 degrees
 Rule: F=F+F-F-F+F
 ```
 
-The initial `+(90)` points the turtle to the right. Each `F` becomes five segments: right, down, right, up, and right, relative to the starting heading. Replacing every segment again produces the smaller square loops in the second and third iterations.
+The initial `+(90)` points the turtle to the right. The first replacement draws right, down, right, up, and right. Applying the same pattern to every segment gives 5, 25, and 125 segments in iterations 1, 2, and 3.
 
 ### Rules in Houdini
 
@@ -40,9 +40,11 @@ The initial `+(90)` points the turtle to the right. Each `F` becomes five segmen
 
 ## 3. Custom plant — fern
 
-The reference is a lady fern. The structure I focused on is the central stalk, the side branches on both sides, and the smaller leaflets along those branches. This is a simplified flat frond; the individual leaflets have straight edges instead of the small lobes in the photo.
+I chose a lady fern because its structure repeats at two levels: branches along the main stalk, then leaflets along each branch. The model keeps that arrangement and the taper toward the tip. It is a flat, simplified frond; the leaflets have straight edges rather than the small lobes in the photo.
 
-<img src="images/fern_reference.jpg" width="420" alt="Lady fern reference photograph">
+| Reference photograph | My L-system, iteration 12 |
+| --- | --- |
+| <img src="images/fern_reference.jpg" width="330" alt="Lady fern reference photograph"> | <img src="images/fern_result.png" width="330" alt="Iteration 12 fern in the Houdini viewport"> |
 
 Reference photo: [Rosser1954, Lady Fern frond — normal appearance](https://commons.wikimedia.org/wiki/File:Lady_Fern_frond_-_normal_appearance.jpg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). The photo is included unchanged.
 
@@ -58,25 +60,25 @@ C(l)=[{.+(12)f(l/2).-(24)f(l/2).-(156)f(l/2).-(24)f(l/2).}]
 D(l)=[-(60)C(l*.55)][+(60)C(l*.5)]
 ```
 
-- **A** grows one section of the central stalk and starts a branch on each side. The next section is 90% as long, so the frond tapers toward its tip. The two branch angles and lengths are slightly different, and the stalk bends by 2 degrees per section.
-- **B** grows a side branch. It adds two pairs of leaflets and then continues with a shorter branch segment. The `0.78` factor makes the outer parts smaller.
-- **C** draws one narrow leaflet. The braces start and end a polygon, the dots record its corners, and lowercase `f` moves between corners without adding stem lines. Its brackets keep the leaf from changing the branch's position or heading.
-- **D** places a leaflet on each side of a branch. Keeping this pair in its own rule lets the same arrangement be reused twice in **B**.
+- **A — main stalk:** draws one section and starts a branch on each side. The next section is 90% as long, and a 2-degree turn curves the stalk. Slightly different angles and lengths keep the two sides from matching exactly.
+- **B — side branch:** draws three short sections, places two pairs of leaflets, and continues with 78% of the previous length. This makes each branch taper too.
+- **C — leaflet:** draws a narrow polygon. Braces define the polygon, dots mark its corners, and lowercase `f` moves without drawing stem lines. The brackets restore the branch's position and heading afterward.
+- **D — leaflet pair:** places a leaflet on each side at 60 degrees. Keeping the pair in a separate rule lets **B** reuse it.
 
-Here, `l` is the length passed into each symbol. The rules are applied together once per generation, so a new `B` takes another generation to produce `D`, and `D` takes another generation to produce the leaf polygon through `C`. This is why the youngest branches near the tip still have no leaves.
+`l` is the length passed into each symbol. Rules are replaced in parallel: `B` produces `D`, then `D` produces `C`, and finally `C` draws the polygon. This delay leaves the youngest branches near the tip bare.
 
-### Iterations 3, 5, and 7
+### Iterations 4, 8, and 12
 
-At iteration 3, the stalk and side branches are visible. At iteration 5, the older branches have leaflets. At iteration 7, there are more rows of branches and more leaflets on the lower branches.
+Iteration 4 has the first leaflets. By iteration 8, the older branches have several pairs. Iteration 12 shows the fuller frond, with smaller branches toward the tip.
 
 ![Fern iterations](images/fern_iterations.png)
 
-The three iteration diagrams use the actual geometry generated by the Houdini nodes, arranged side by side for comparison. Each view is fitted separately; green is used in the fern diagram to make the leaf polygons easier to see.
+The comparison diagrams are drawn from the nodes' actual geometry. Each panel is fitted separately, so they compare structure rather than absolute size. Green makes the fern's leaf polygons easier to see.
 
-<img src="images/fern_houdini.png" width="700" alt="Fern at iteration 7 in the Houdini viewport">
+Full Houdini screenshots: [iteration 4](images/fern_n4.png), [iteration 8](images/fern_n8.png), and [iteration 12 with the rule panel](images/fern_houdini.png).
 
 ## Opening the project
 
-Open `lab05.hipnc` in Houdini. The file opens on `fern_n7`. To inspect a different result, enter its geometry object, select the desired L-system node, and turn on its blue display flag. The number at the end of each node name is its generation count.
+Open `lab05.hipnc` in Houdini. It opens on `fern_n12`. To view another result, enter its geometry object and turn on the desired node's blue display flag. The number in each node name is its generation count.
 
 All nodes use **Skeleton** output and **Random Scale = 0**. The puzzle nodes use **Step Size = 1**. The fern uses explicit segment lengths in its rules. The results were checked in Houdini Apprentice 22.0.429; the project is saved as a non-commercial `.hipnc` file.
