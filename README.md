@@ -9,8 +9,21 @@
 
 ## 3. Custom plant
 **My Creation**
+
+
 ![Christmas tree](puzzle3.png)
-**Refernce Image**
+
+
+
+**Reference Image**
+
+
 ![Tree reference](ReferenceImage.png)
+
+
+
+
 **My rules**
+
+
 ![Puzzle3 rules](puzzle3rules.png)
