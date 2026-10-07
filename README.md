@@ -1,3 +1,9 @@
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+
+
 # lab05-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
