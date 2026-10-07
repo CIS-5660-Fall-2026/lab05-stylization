@@ -17,7 +17,19 @@ This is a Japanese elm.
 ![Puzzle3](images/puzzle3.png)
 ![Puzzle Solution](images/puzzle3-sol.png)
 
+| Iterations | Output |
+|------------|--------|
+| 2 | ![Iteration 1](images/puzzle3-2.png) |
+| 4 | ![Iteration 2](images/puzzle3-4.png) |
+| 6 | ![Iteration 3](images/puzzle3-6.png) |
+
 Starting from Houdini L-System’s default rules, I adjusted the orientation of the branches and added more smaller branches and twigs.
+
+**A** creates several main branches using **B** spreading in different directions.
+
+**B** extends each main branch with FF, creates two side branches using [+F] and [-F], and then continues the recursive structure through **A**.
+
+**C** creates four short terminal branches pointing at different angles.
 
 ## Submission
 - Create a pull request against this repository
