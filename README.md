@@ -4,21 +4,22 @@ Let's practice using grammars! For this lab, please pull up the L-system node in
 ## Luke Kwon
 ### 1. Wheat grammar puzzle
 <img width="1723" height="916" alt="Screenshot 2026-10-07 at 11 03 06 AM" src="https://github.com/user-attachments/assets/db7097f0-e073-4021-98d6-8cd65fbe6696" />
-Solution - Premise: F / Rule: F=FF[-FF]F[-FF]FF-
+**Solution** - Premise: F / Rule: F=FF[-FF]F[-FF]FF-
 
 ### 2. Square grammar puzzle
 <img width="1096" height="708" alt="Screenshot 2026-10-07 at 11 33 04 AM" src="https://github.com/user-attachments/assets/95744efd-d436-4230-8d78-0d421fa6b87b" />
-Solution - Premise: -F / Rule: F=F-F+F+F-F
+**Solution** - Premise: -F / Rule: F=F-F+F+F-F
 
 ### 3. Custom Plant - Dragon Blood Tree
 <img width="320" height="320" alt="image" src="https://github.com/user-attachments/assets/fdbe9965-8ac9-4c95-b532-4c2ebf985ddf" />
 
 <img width="1081" height="699" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
-Premise: FFF!"[FFFFFA]/////[FFFFFA]/////FFFFFA
 
-Rule1: A = !"[B]/////[B]/////B
+**Premise:** FFF!"[FFFFFA]/////[FFFFFA]/////FFFFFA
 
-Rule2: B = &FFFFA
+**Rule1:** A = !"[B]/////[B]/////B
+
+**Rule2:** B = &FFFFA
 
 
 ## 1. Wheat grammar puzzle
