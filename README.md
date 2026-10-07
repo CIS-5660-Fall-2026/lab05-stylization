@@ -1,6 +1,32 @@
 # lab05-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
+## Luke Kwon
+### 1. Wheat grammar puzzle
+<img width="1723" height="916" alt="Screenshot 2026-10-07 at 11 03 06 AM" src="https://github.com/user-attachments/assets/db7097f0-e073-4021-98d6-8cd65fbe6696" />
+
+**Solution** - Premise: F / Rule: F=FF[-FF]F[-FF]FF-
+
+### 2. Square grammar puzzle
+<img width="1096" height="708" alt="Screenshot 2026-10-07 at 11 33 04 AM" src="https://github.com/user-attachments/assets/95744efd-d436-4230-8d78-0d421fa6b87b" />
+
+**Solution** - Premise: -F / Rule: F=F-F+F+F-F
+
+### 3. Custom Plant - Dragon Blood Tree
+<img width="320" height="320" alt="image" src="https://github.com/user-attachments/assets/fdbe9965-8ac9-4c95-b532-4c2ebf985ddf" />
+
+<img width="1081" height="699" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
+
+The dragon blood tree has a long base trunk, and the branches spread out in a positive angle, giving them the converging-above-90 degrees look.
+I tried to recreate this tree by increasing the length and girth of the base shape, then gradually decreasing these values each iteration, while keeping the angle at a decently small positive value.
+
+**Premise:** FFF!"[FFFFFA]/////[FFFFFA]/////FFFFFA
+
+**Rule1:** A = !"[B]/////[B]/////B
+
+**Rule2:** B = &FFFFA
+
+
 ## 1. Wheat grammar puzzle
 Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
 <img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949661-a3a0e1f7-7d68-4b9e-8384-d9991e1e9fd2.png">
