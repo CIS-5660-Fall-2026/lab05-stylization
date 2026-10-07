@@ -25,8 +25,6 @@ I used [this spiral L-system](https://gist.github.com/nitaku/8b9e134ca8bae13bb47
 2. `B=B!(0.5)"(0.5)+AF+AF`- This is where the "spiraling" happens: first, the incoming geometry is scaled down both by length and (volume) thickness. Then, it is extended twice by `AF` (i.e., the rule `A` and then moved forward once).
 3. `C=[+^F][+&F]+F"(0.5)[+^F][+&F]` - This is the "geometry" for the "leaf": it makes a three-prong fork, then from the center branch makes another, scaled down three-prong fork.
 
-<img width="200" src="custom_3_itt.png">
-<img width="200" src="custom_5_itt.png">
-<img width="200" src="custom_10_itt.png">
+<img width="250" src="custom_3_itt.png"> <img width="250" src="custom_5_itt.png"> <img width="250" src="custom_10_itt.png">
 
 *(Screenshots of the L-system with 3, 5, and 10 iterations, respectively)*
