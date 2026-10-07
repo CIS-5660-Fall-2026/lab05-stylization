@@ -15,7 +15,9 @@ Solution - Premise: -F / Rule: F=F-F+F+F-F
 
 <img width="1081" height="699" alt="Screenshot 2026-10-07 at 1 16 44 PM" src="https://github.com/user-attachments/assets/787f8964-0899-4c0f-a6fb-c1469486b5cb" />
 Premise: FFF!"[FFFFFA]/////[FFFFFA]/////FFFFFA
+
 Rule1: A = !"[B]/////[B]/////B
+
 Rule2: B = &FFFFA
 
 
