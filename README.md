@@ -1,3 +1,32 @@
+# Bryan Chung - Lab 5: L-Systems
+
+## 1.
+<img width="503" height="455" alt="image" src="https://github.com/user-attachments/assets/d0903727-c045-46c9-81d0-8d02fea6d9a5" />
+<img width="456" height="236" alt="image" src="https://github.com/user-attachments/assets/2821d8d7-6bf1-434f-a87d-24de91f31b16" />
+
+## 2.
+<img width="421" height="384" alt="image" src="https://github.com/user-attachments/assets/c2635744-c7f8-41a3-9712-6aa2a87e8eeb" />
+<img width="457" height="236" alt="image" src="https://github.com/user-attachments/assets/2ef813e4-9a0c-40eb-b4a0-cd7411771635" />
+
+## 3.
+1 iteration
+<br>
+<img width="536" height="514" alt="image" src="https://github.com/user-attachments/assets/aecad673-fe11-46ed-91c9-336ed9fd07f5" />
+<br>
+3 iterations
+<br>
+<img width="608" height="561" alt="image" src="https://github.com/user-attachments/assets/bda122f0-4d58-43f0-bf3f-86018da079d0" />
+<br>
+5 iterations
+<br>
+<img width="683" height="540" alt="image" src="https://github.com/user-attachments/assets/969876d0-0bfd-4ac5-90e3-6d44d3c881fa" />
+<img width="461" height="253" alt="image" src="https://github.com/user-attachments/assets/b0377f57-94aa-4599-97be-d8e16f65ff1b" />
+<img width="461" height="238" alt="image" src="https://github.com/user-attachments/assets/24466ffb-b2e9-4130-b4e6-0ce15c83976d" />
+
+My rule uses random scale to avoid uniformity, and each segment moves upward before making 4 branches off at 3D angles away from the main branch. Then I use similar rules for A and B where each A branch creates both As and Bs in the next iteration for more variation, and vice versa for B.
+
+---
+
 # lab05-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
