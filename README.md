@@ -1,3 +1,49 @@
+# Nathan Chortek Submission
+
+## Wheat grammar puzzle
+
+<img src="wheatRules.png">
+
+## Square grammar puzzle
+
+<img src="boxesRules.png">
+
+## Custom plant
+
+### Reference
+
+<img src="baobabReference.png">
+
+The tree has a very thick trunk with a relatively flat top. Each branch then grows roughly perpendicularly to from the tip of its preceding limb, with decreasing in thickness.
+
+### Rules
+
+<img src="baobabRules.png">
+
+**Rule 1**
+* This helps randomize the number of branches grown at each iteration. With `: 0.75`, each of the 4 possible branches in Rule 2 have a 75% chance of growing.
+
+**Rule 2**
+* `"`: Multiplies the current length by `Step Size Scale`. This causes each iteration to be shorter than the last when combined with `Step Size Scale < 1`.
+* `!`: Multiplies the current thickness by `Thickness Scale`. This causes each iteration to be thinner than the last when combined with `Thickness Scale < 1`.
+* `FFF`: Grows a branch forward 3 steps.
+* `~(10)`: Applies a random rotational offset up to 10 degrees, adding non-uniformity to the branch directions while remaining close to a default of 90 degrees.
+* `+`, `-`, `&`, `^`: Causes each of the 4 possible branches to grow perpendicularly from the tip of the preceding branch, forming a rough 4-lane "crossroads" pattern. When combined with Rule 1, each crossroad has a variable number of segments.
+
+### Results
+
+**5 Iterations**
+
+<img src="baobab5.png">
+
+**10 Iterations**
+
+<img src="baobab10.png">
+
+**15 Iterations**
+
+<img src="baobab15.png">
+
 # lab05-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
