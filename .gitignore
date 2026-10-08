@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+backup/
+*.hipnc.bak
+
+# Personal local instructions
+START_HERE.txt

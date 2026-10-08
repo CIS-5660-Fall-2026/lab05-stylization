@@ -1,0 +1,231 @@
+{
+  "houdini_version": "22.0.466",
+  "license": "licenseCategoryType.Apprentice",
+  "models": [
+    {
+      "model": "wheat",
+      "generation": 1,
+      "houdini_primitives": 3,
+      "segments": 9,
+      "blades": 0,
+      "expected_segments": 9,
+      "expected_blades": 0,
+      "matching_segments": 9,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          -0.6840402483940125,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          5.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "model": "wheat",
+      "generation": 2,
+      "houdini_primitives": 21,
+      "segments": 81,
+      "blades": 0,
+      "expected_segments": 81,
+      "expected_blades": 0,
+      "matching_segments": 81,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          -14.772117614746094,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          16.896930694580078,
+          0.0
+        ]
+      ]
+    },
+    {
+      "model": "wheat",
+      "generation": 3,
+      "houdini_primitives": 183,
+      "segments": 729,
+      "blades": 0,
+      "expected_segments": 729,
+      "expected_blades": 0,
+      "matching_segments": 729,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          -24.02627944946289,
+          -11.028678894042969,
+          0.0
+        ],
+        [
+          4.0531158447265625e-06,
+          19.095394134521484,
+          0.0
+        ]
+      ]
+    },
+    {
+      "model": "square",
+      "generation": 1,
+      "houdini_primitives": 1,
+      "segments": 5,
+      "blades": 0,
+      "expected_segments": 5,
+      "expected_blades": 0,
+      "matching_segments": 5,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        [
+          3.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "model": "square",
+      "generation": 2,
+      "houdini_primitives": 1,
+      "segments": 25,
+      "blades": 0,
+      "expected_segments": 25,
+      "expected_blades": 0,
+      "matching_segments": 25,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          0.0,
+          -4.0,
+          0.0
+        ],
+        [
+          9.0,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    {
+      "model": "square",
+      "generation": 3,
+      "houdini_primitives": 1,
+      "segments": 125,
+      "blades": 0,
+      "expected_segments": 125,
+      "expected_blades": 0,
+      "matching_segments": 125,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          0.0,
+          -12.999999046325684,
+          0.0
+        ],
+        [
+          27.0,
+          8.940696716308594e-07,
+          0.0
+        ]
+      ]
+    },
+    {
+      "model": "fern",
+      "generation": 5,
+      "houdini_primitives": 57,
+      "segments": 75,
+      "blades": 24,
+      "expected_segments": 75,
+      "expected_blades": 24,
+      "matching_segments": 75,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          -1.525207281112671,
+          0.0,
+          0.0
+        ],
+        [
+          1.525207281112671,
+          4.479056358337402,
+          0.0
+        ]
+      ]
+    },
+    {
+      "model": "fern",
+      "generation": 8,
+      "houdini_primitives": 183,
+      "segments": 213,
+      "blades": 84,
+      "expected_segments": 213,
+      "expected_blades": 84,
+      "matching_segments": 213,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          -2.088843584060669,
+          0.0,
+          0.0
+        ],
+        [
+          2.088843584060669,
+          5.901618003845215,
+          0.0
+        ]
+      ]
+    },
+    {
+      "model": "fern",
+      "generation": 12,
+      "houdini_primitives": 463,
+      "segments": 509,
+      "blades": 220,
+      "expected_segments": 509,
+      "expected_blades": 220,
+      "matching_segments": 509,
+      "unmatched_segments": 0,
+      "missing_segments": 0,
+      "warnings": [],
+      "bounds": [
+        [
+          -2.4683632850646973,
+          0.0,
+          0.0
+        ],
+        [
+          2.4683632850646973,
+          7.193532943725586,
+          0.0
+        ]
+      ]
+    }
+  ]
+}

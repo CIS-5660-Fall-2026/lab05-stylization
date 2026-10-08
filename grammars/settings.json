@@ -1,0 +1,26 @@
+{
+  "wheat": {
+    "title": "Wheat grammar",
+    "premise": "F",
+    "angle": 20,
+    "step": 1,
+    "generations": [1, 2, 3],
+    "rules_file": "wheat.txt"
+  },
+  "square": {
+    "title": "Square grammar",
+    "premise": "+F",
+    "angle": 90,
+    "step": 1,
+    "generations": [1, 2, 3],
+    "rules_file": "square.txt"
+  },
+  "fern": {
+    "title": "Southern lady fern",
+    "premise": "F(0.8,0.035)A(1)",
+    "angle": 25,
+    "step": 1,
+    "generations": [5, 8, 12],
+    "rules_file": "fern.txt"
+  }
+}
