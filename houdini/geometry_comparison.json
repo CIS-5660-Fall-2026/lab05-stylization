@@ -1,0 +1,69 @@
+{
+  "tolerance": 0.0002,
+  "comparison": "Native Houdini 21 geometry versus independent 2D grammar interpreter",
+  "nodes": [
+    {
+      "node": "wheat_n01",
+      "segments": 9,
+      "polygons": 0,
+      "maximum_segment_error": 2.7951906844656113e-07,
+      "maximum_polygon_vertex_error": 0.0
+    },
+    {
+      "node": "wheat_n02",
+      "segments": 81,
+      "polygons": 0,
+      "maximum_segment_error": 5.903626670280195e-06,
+      "maximum_polygon_vertex_error": 0.0
+    },
+    {
+      "node": "wheat_n03",
+      "segments": 729,
+      "polygons": 0,
+      "maximum_segment_error": 1.7345637857658352e-05,
+      "maximum_polygon_vertex_error": 0.0
+    },
+    {
+      "node": "square_n01",
+      "segments": 5,
+      "polygons": 0,
+      "maximum_segment_error": 7.39148100501819e-08,
+      "maximum_polygon_vertex_error": 0.0
+    },
+    {
+      "node": "square_n02",
+      "segments": 25,
+      "polygons": 0,
+      "maximum_segment_error": 2.0647654636434031e-07,
+      "maximum_polygon_vertex_error": 0.0
+    },
+    {
+      "node": "square_n03",
+      "segments": 125,
+      "polygons": 0,
+      "maximum_segment_error": 1.3486991523486091e-06,
+      "maximum_polygon_vertex_error": 0.0
+    },
+    {
+      "node": "fern_n04",
+      "segments": 16,
+      "polygons": 12,
+      "maximum_segment_error": 1.7114426124194142e-07,
+      "maximum_polygon_vertex_error": 2.2509930657079768e-07
+    },
+    {
+      "node": "fern_n08",
+      "segments": 64,
+      "polygons": 84,
+      "maximum_segment_error": 6.890379511974694e-07,
+      "maximum_polygon_vertex_error": 6.605126718419208e-07
+    },
+    {
+      "node": "fern_n14",
+      "segments": 196,
+      "polygons": 312,
+      "maximum_segment_error": 1.2805990252731427e-06,
+      "maximum_polygon_vertex_error": 1.297967057585803e-06
+    }
+  ]
+}

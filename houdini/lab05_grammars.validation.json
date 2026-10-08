@@ -1,0 +1,71 @@
+{
+  "houdini_version": "21.0.512",
+  "project": "C:/Users/fujin/Desktop/UPENN/Term3/CIS5660/lab05-stylization/houdini/lab05_grammars.hipnc",
+  "nodes": [
+    {
+      "node": "/obj/lab05_grammars/wheat_n01",
+      "generation": 1.0,
+      "points": 10,
+      "primitives": 3,
+      "warnings": []
+    },
+    {
+      "node": "/obj/lab05_grammars/wheat_n02",
+      "generation": 2.0,
+      "points": 82,
+      "primitives": 21,
+      "warnings": []
+    },
+    {
+      "node": "/obj/lab05_grammars/wheat_n03",
+      "generation": 3.0,
+      "points": 730,
+      "primitives": 183,
+      "warnings": []
+    },
+    {
+      "node": "/obj/lab05_grammars/square_n01",
+      "generation": 1.0,
+      "points": 6,
+      "primitives": 1,
+      "warnings": []
+    },
+    {
+      "node": "/obj/lab05_grammars/square_n02",
+      "generation": 2.0,
+      "points": 26,
+      "primitives": 1,
+      "warnings": []
+    },
+    {
+      "node": "/obj/lab05_grammars/square_n03",
+      "generation": 3.0,
+      "points": 126,
+      "primitives": 1,
+      "warnings": []
+    },
+    {
+      "node": "/obj/lab05_grammars/fern_n04",
+      "generation": 4.0,
+      "points": 77,
+      "primitives": 19,
+      "warnings": []
+    },
+    {
+      "node": "/obj/lab05_grammars/fern_n08",
+      "generation": 8.0,
+      "points": 485,
+      "primitives": 99,
+      "warnings": []
+    },
+    {
+      "node": "/obj/lab05_grammars/fern_n14",
+      "generation": 14.0,
+      "points": 1757,
+      "primitives": 339,
+      "warnings": []
+    }
+  ],
+  "color_nodes_verified": 3,
+  "note": "Final saved project reopened and verified; all Color SOPs preserve the L-system geometry."
+}

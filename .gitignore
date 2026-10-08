@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.hip.bak
+*.hipnc.bak
+*.hiplc.bak
+houdini/backup/
