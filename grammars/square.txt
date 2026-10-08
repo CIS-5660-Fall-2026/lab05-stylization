@@ -1,0 +1,2 @@
+# Premise: +F | Angle: 90 | Step Size: 1 | Generations: 1, 2, 3
+F=F+F-F-F+F
