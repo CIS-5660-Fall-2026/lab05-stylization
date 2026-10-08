@@ -1,0 +1,2 @@
+# Premise: F | Angle: 20 | Step Size: 1 | Generations: 1, 2, 3
+F=FF[-FF]F[-FF]FF-

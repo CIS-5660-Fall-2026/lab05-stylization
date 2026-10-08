@@ -1,0 +1,8 @@
+# Premise: F(0.8,0.035)A(1) | Step Size: 1 | Generations: 5, 8, 12
+# All angles below are explicit; the default Angle does not affect this plant.
+# A: rachis, alternating pinnae, and a smaller growing tip.
+A(s)=F(0.45*s,0.035*s)[+(68)B(0.9*s)]F(0.45*s,0.035*s)[-(68)B(0.9*s)]-(1.5)A(0.90*s)
+# B: pinna axis, paired pinnules, and a smaller growing tip.
+B(s)=F(0.32*s,0.018*s)[+(55)C(0.90*s)][-(55)C(0.90*s)]F(0.28*s,0.018*s)B(0.82*s)
+# C: one closed leaf blade, followed by its central vein in a separate branch.
+C(s)=[{.+(18)f(0.5*s).-(36)f(0.5*s).-(144)f(0.5*s).}][F(0.9510565*s,0.008*s)]

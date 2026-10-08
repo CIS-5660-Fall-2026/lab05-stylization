@@ -1,0 +1,47 @@
+{
+  "renderer": "Python 2D subset; not Houdini",
+  "models": {
+    "wheat": {
+      "1": {
+        "segments": 9,
+        "blades": 0
+      },
+      "2": {
+        "segments": 81,
+        "blades": 0
+      },
+      "3": {
+        "segments": 729,
+        "blades": 0
+      }
+    },
+    "square": {
+      "1": {
+        "segments": 5,
+        "blades": 0
+      },
+      "2": {
+        "segments": 25,
+        "blades": 0
+      },
+      "3": {
+        "segments": 125,
+        "blades": 0
+      }
+    },
+    "fern": {
+      "5": {
+        "segments": 75,
+        "blades": 24
+      },
+      "8": {
+        "segments": 213,
+        "blades": 84
+      },
+      "12": {
+        "segments": 509,
+        "blades": 220
+      }
+    }
+  }
+}
