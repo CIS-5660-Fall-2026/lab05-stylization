@@ -17,7 +17,7 @@ F=FF[-FF]F[-FF]FF-
 
 Each `F` is replaced by five forward steps along the main axis. Two bracketed branches, each two steps long, grow at the second and third main-axis steps. `[` saves the turtle state, and `]` restores it, so drawing a branch does not change the main axis. Each `-` turns left by 20 degrees.
 
-The final `-` is essential. At generation 1 it changes only the heading after the visible geometry has been drawn. At later generations that rotation affects the next rewritten segment, producing the curved second iteration and the coiled third iteration. The same single rule is used for all three results.
+At generation 1 it changes only the heading after the visible geometry has been drawn. At later generations that rotation affects the next rewritten segment, producing the curved second iteration and the coiled third iteration. The same single rule is used for all three results.
 
 ![Wheat rules in Houdini](images/wheat_rules_houdini.png)
 
