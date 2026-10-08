@@ -11,8 +11,9 @@ Let's practice using grammars! For this lab, please pull up the L-system node in
 
 **Generation 12:**
 <img width="1177" height="691" alt="image" src="https://github.com/user-attachments/assets/53d0140a-7aa6-41ff-8511-5b52850c212d" />
-**Generation 18:**
-<img width="1655" height="681" alt="image" src="https://github.com/user-attachments/assets/b9842cc1-8688-41e6-92b6-e9a3d39f5370" />
+**Generation 16:**
+<img width="1218" height="710" alt="image" src="https://github.com/user-attachments/assets/0e897689-8a03-4f76-88eb-dbd54d36684c" />
+
 ## Erdtree overview
 The erdtree is a very tall tree with a thick root. most of its branches come out at the top of the tree, however starting 2/3rds way up there are branches that come out at sharp angles.
 The branches at the top all flatten out  pretty  heavily to form the top. This aspect i didnt manage to implement, but i'm assuming if I had I would do so by taking more direct control of the angle via parameters, like i did with the `B(i)`
