@@ -1,3 +1,38 @@
+Charlie's Solutions
+
+Puzzle 1
+
+$$F = FF[+FF]F[+FF]FF+$$
+![](hay1.png)
+![](hay2.png)
+![](hay3.png)
+
+Puzzle 2
+
+Premise -F
+$$F = F-F+F+F-F$$
+![](square1.png)
+![](square2.png)
+![](square3.png)
+
+
+Fern
+
+$$A(s) = F(s * 0.1)[-B(s*1.0)][+B(s*1.0)]F(s * 0.1)[-B(s*0.8)][+B(s*0.8)]F(s * 0.1)[-B(s*0.6)][+B(s*0.6)]F(s * 0.08)[-B(s*0.4)][+B(s*0.4)]F(s * 0.08)[-B(s*0.2)][+B(s*0.2)]F(s * 0.04)$$
+
+$$B(s) = !(0.6)A(s * 0.4)$$
+
+A function creates a bunch of branches in a row, making them shorter to taper the fern. 
+
+B then recursively creates A branches while passing in a smaller scale to create the fernlike structures.
+
+![](Fern1.png)
+![](Fern2.png)
+![](Fern3.png)
+![](FernTube.png)
+
+
+
 # lab05-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
