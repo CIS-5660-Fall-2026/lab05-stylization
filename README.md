@@ -12,3 +12,25 @@ Let's practice using grammars! For this lab, please pull up the L-system node in
 <img width="1177" height="691" alt="image" src="https://github.com/user-attachments/assets/53d0140a-7aa6-41ff-8511-5b52850c212d" />
 
 <img width="1655" height="681" alt="image" src="https://github.com/user-attachments/assets/b9842cc1-8688-41e6-92b6-e9a3d39f5370" />
+## Erdtree overview
+The erdtree is a very tall tree with a thick root. most of its branches come out at the top of the tree, however starting 2/3rds way up there are branches that come out at sharp angles.
+The branches at the top all flatten out  pretty  heavily to form the top. This aspect i didnt manage to implement, but i'm assuming if I had I would do so by taking more direct control of the angle via parameters, like i did with the `B(i)`
+## Rules:
+Premise: `F(15)~(c)F~(c)F~(c)B(4)E`
+
+Rules:
+```
+B(i)="(1.2)[A][$A]~(2)F(i)B(0.8*i)
+A=!(0.3)F[^^~(30)C]//[^^~(30)C]//[^^~(30)C]
+C=!"FF~(10)T[D]C
+D=!(0.5)"(0.5)~(60)C : 0.3
+```
+The premise starts the bottom of the trunk that has no branches off it, and makes it slightly not straight.
+B: Trunk of the tree
+A: Point from which branches come out of
+C: Branch
+D: Optional split in a branch
+### Rule explanation in depth:
+The base shrinks via the parameter i, but I also do `"(1.2)` so the branches get longer the higher they are on the tree. `[$A]` happened to flip the branch positions around, i'm not sure why it works better than `|` or `/(180)`.
+
+The rest is pretty self explanitory, I randomly extend three branches from each point A, Im always shrinking the thickness and slightly the lengths as I go.
