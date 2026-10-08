@@ -9,8 +9,9 @@ Let's practice using grammars! For this lab, please pull up the L-system node in
 ### Plant: Erdtree
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/50348d79-03e6-4971-a4ac-de4e38fe03c3" />
 
+**Generation 12:**
 <img width="1177" height="691" alt="image" src="https://github.com/user-attachments/assets/53d0140a-7aa6-41ff-8511-5b52850c212d" />
-
+**Generation 18:**
 <img width="1655" height="681" alt="image" src="https://github.com/user-attachments/assets/b9842cc1-8688-41e6-92b6-e9a3d39f5370" />
 ## Erdtree overview
 The erdtree is a very tall tree with a thick root. most of its branches come out at the top of the tree, however starting 2/3rds way up there are branches that come out at sharp angles.
