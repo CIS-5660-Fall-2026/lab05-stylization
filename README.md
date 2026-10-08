@@ -6,3 +6,9 @@ Let's practice using grammars! For this lab, please pull up the L-system node in
 <img width="400" alt="Screenshot 2026-10-07 152135" src="https://github.com/user-attachments/assets/780da1dd-caf4-401e-b8b9-d8f1894e6b89" />
 <img width="400" alt="Screenshot 2026-10-07 152441" src="https://github.com/user-attachments/assets/2f7ea202-c121-4f2e-abca-bf6c20e51809" />
 
+### Plant: Erdtree
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/50348d79-03e6-4971-a4ac-de4e38fe03c3" />
+
+<img width="1177" height="691" alt="image" src="https://github.com/user-attachments/assets/53d0140a-7aa6-41ff-8511-5b52850c212d" />
+
+<img width="1655" height="681" alt="image" src="https://github.com/user-attachments/assets/b9842cc1-8688-41e6-92b6-e9a3d39f5370" />
