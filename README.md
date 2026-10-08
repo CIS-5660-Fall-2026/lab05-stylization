@@ -1,22 +1,49 @@
-# lab05-grammars
-Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
+# Lab 05: L-System Grammars
+
+Built with Houdini's L-System SOP.
 
 ## 1. Wheat grammar puzzle
-Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949661-a3a0e1f7-7d68-4b9e-8384-d9991e1e9fd2.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949853-cf2306b3-3537-4c24-91b5-0a3083bc87c0.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949859-5e432b4b-f18d-48b5-a9e9-8d7dba255955.png">
+
+Premise `F`, rule `F=FF[-FF]F[-FF]FF-`, angle 20°. The trailing `-` turns each copy of the stalk 20° further than the last, so it curls into the spiral.
+
+<img width="600" src="images/wheat_rules.png">
+
+**Output** (n = 1, 2, 3):
+
+<img width="200" src="images/wheat_n1.png"> <img width="200" src="images/wheat_n2.png"> <img width="200" src="images/wheat_n3.png">
 
 ## 2. Square grammar puzzle
-How about this one? Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949895-87cdfb43-da7c-4867-ab1b-107e1ba9d2a7.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949904-a9cdfe0f-319e-4ca8-9935-dd338217a7cf.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949910-928e5993-ce26-4681-80f8-ffeb54be4dcf.png">
 
-## 3. Custom plant
-Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of that plant. Unlike our simple puzzles, please use multiple rules for greater complexity. Think carefully about the structure of your grammar! EXPLAIN the structure of your plant in the README. What are the components? What do each of the rules do? Be sure to also include images of a few iterations of your output plant. 
+Premise `+F`, rule `F=F+F-F-F+F`, angle 90° (a quadratic Koch curve).
 
-## Submission
-- Create a pull request against this repository
-- In your readme, list your solutions and format your README nicely
-- Profit
+<img width="600" src="images/square_rules.png">
+
+**Output** (n = 1, 2, 3):
+
+<img width="200" src="images/square_n1.png"> <img width="200" src="images/square_n2.png"> <img width="200" src="images/square_n3.png">
+
+## 3. Custom plant: Norfolk Island pine
+
+<img height="300" src="images/pine_reference.jpg"> <img height="300" src="images/pine_gen12.png">
+
+<sub>Reference photo: Alleter73, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Araucaria_de_la_PUCP.jpg), CC0.</sub>
+
+**Structure:** a single straight trunk with tiers (whorls) of 5 branches. Lower branches are older, so they're longer and sag toward horizontal with upturned tips, which gives the cone shape. Each branch carries flat sprays of needle covered branchlets.
+
+Premise `FFA`, angle 38°, 12 generations.
+
+| Rule | Component | What it does |
+| :-- | :-- | :-- |
+| `A=!(0.92)IW/(36)A` | Trunk apex | Adds a trunk segment and a whorl, rotates the next tier 36°, and tapers the trunk |
+| `I=FF` | Trunk segment | Draws the trunk between tiers |
+| `W=[!(0.3)S&HB]/(72)` ×5 | Whorl | Five branches 72° apart around the trunk |
+| `S=;(1.1)S` | Sag | Multiplies a branch's angle by 1.1 each generation, so older branches droop |
+| `B=!(0.9)HPHP^(3)B` | Branch | Grows the branch, adds branchlet pairs, and curves the tip upward |
+| `P=[-(60)&(20)"(0.5)!(2.2)g(1)C(4)][+(60)&(20)"(0.5)!(2.2)g(1)C(4)]` | Branchlet pair | One branchlet on each side, grouped so they can be colored green |
+| `C(n):n>0=FC(n-1)` | Branchlet | Grows up to 4 segments |
+
+<img width="600" src="images/pine_rules.png">
+
+**Iterations** (generations 3, 6, 9, 12):
+
+<img width="200" src="images/pine_gen3.png"> <img width="200" src="images/pine_gen6.png"> <img width="200" src="images/pine_gen9.png"> <img width="200" src="images/pine_gen12.png">
