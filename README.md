@@ -1,4 +1,8 @@
 # lab05-grammars
+
+![alt text](image-2.png)
+
+
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
 ## 1. Wheat grammar puzzle
@@ -18,8 +22,17 @@ How about this one? Take a screenshot of your rules.\
 ![alt text](image-1.png)
 
 ## 3. Custom plant
-Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of that plant. Unlike our simple puzzles, please use multiple rules for greater complexity. Think carefully about the structure of your grammar! EXPLAIN the structure of your plant in the README. What are the components? What do each of the rules do? Be sure to also include images of a few iterations of your output plant.
+![alt text](flower.gif)
 
+![alt text](image-3.png)
+
+These are the rules I used to create this flower. A is the main stem, and there are two variants for two different leaves, which are indepdently chosen with 50% probability. The (L,0,1) is a way to pass info upstream to the stamp expression in my switch statement between two leaves.
+
+B is the formula for the flower.
+C is the formula for the leaves.
+D is the formula for the budding at the top (which only appears at the end since we include it after A in the Premise).
+
+Followed this tutorial: https://www.youtube.com/watch?v=0vE8GiXhOWM
 
 
 ## Submission
